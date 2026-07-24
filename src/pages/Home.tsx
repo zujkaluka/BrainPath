@@ -186,21 +186,20 @@ export default function Home() {
 
       {/* Doctor */}
       <section className="container-page grid items-center gap-10 pt-20 lg:grid-cols-2">
-        {/* Portrait slot — replace the placeholder with an authentic photo of the doctor. */}
         <div className="relative mx-auto w-full max-w-md">
-          <div className="aspect-[4/5] overflow-hidden rounded-3xl bg-gradient-to-br from-sand-100 to-sand-300 shadow-lift">
-            <div className="flex h-full flex-col items-center justify-center p-8 text-center">
-              <div className="flex h-24 w-24 items-center justify-center rounded-full bg-white text-primary-600 shadow-soft">
-                <svg className="h-12 w-12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-                  <circle cx="12" cy="7" r="4" />
-                </svg>
-              </div>
-              <p className="mt-5 font-display text-2xl text-primary-900">{SITE.doctor}</p>
-              <p className="mt-1 text-sm font-semibold uppercase tracking-wider text-sand-700">
-                doktor stomatologije
-              </p>
-            </div>
+          <div className="aspect-[4/5] overflow-hidden rounded-3xl bg-sand-200 shadow-lift">
+            <img
+              src="/dr-marjana.jpg"
+              alt={`${SITE.doctor}, doktor stomatologije, u ordinaciji Pesonident`}
+              className="h-full w-full object-cover object-top"
+              loading="lazy"
+            />
+          </div>
+          <div className="absolute bottom-4 left-4 right-4 rounded-2xl bg-white/90 px-5 py-3.5 shadow-soft backdrop-blur">
+            <p className="font-display text-xl text-primary-900">{SITE.doctor}</p>
+            <p className="text-xs font-semibold uppercase tracking-wider text-mint-700">
+              doktor stomatologije
+            </p>
           </div>
         </div>
         <div>
