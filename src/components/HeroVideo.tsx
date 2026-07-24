@@ -14,7 +14,7 @@ const PARTS = [
   },
   {
     local: "/hero-2.mp4",
-    cdn: "", // filled in once part 2 is generated
+    cdn: "https://d8j0ntlcm91z4.cloudfront.net/user_3ERbZynT8QldfB80015vYWFljPv/hf_20260724_021301_b622e8fc-1192-4002-99d6-34fa646504d7.mp4",
   },
 ];
 
