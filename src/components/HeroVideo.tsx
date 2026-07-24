@@ -4,19 +4,10 @@ import { HeartIcon } from "./Icons";
 /**
  * Two-part hero video: part 1 is the ambient clinic shot, part 2 is
  * Dr Marjana welcoming patients in Serbian. The parts crossfade in a loop.
- * Each part prefers a self-hosted file in public/ and falls back to the
- * Higgsfield CDN copy; if neither part can play, the branded card shows.
+ * Both are self-hosted from public/; the branded card shows if a part
+ * can't play.
  */
-const PARTS = [
-  {
-    local: "/hero.mp4",
-    cdn: "https://d8j0ntlcm91z4.cloudfront.net/user_3ERbZynT8QldfB80015vYWFljPv/hf_20260724_015540_d4124dfc-03f3-40c4-87f8-e68c83c9e5dc.mp4",
-  },
-  {
-    local: "/hero-2.mp4",
-    cdn: "https://d8j0ntlcm91z4.cloudfront.net/user_3ERbZynT8QldfB80015vYWFljPv/hf_20260724_021301_b622e8fc-1192-4002-99d6-34fa646504d7.mp4",
-  },
-];
+const PARTS = ["/hero.mp4", "/hero-2.mp4"];
 
 export default function HeroVideo() {
   const [active, setActive] = useState(0);
@@ -65,9 +56,9 @@ export default function HeroVideo() {
         </p>
       </div>
 
-      {PARTS.map((part, index) => (
+      {PARTS.map((src, index) => (
         <video
-          key={part.local}
+          key={src}
           ref={refs[index]}
           autoPlay={index === 0}
           muted={muted}
@@ -79,8 +70,7 @@ export default function HeroVideo() {
           onCanPlay={() => markReady(index)}
           onEnded={() => handleEnded(index)}
         >
-          <source src={part.local} type="video/mp4" />
-          {part.cdn && <source src={part.cdn} type="video/mp4" />}
+          <source src={src} type="video/mp4" />
         </video>
       ))}
 
