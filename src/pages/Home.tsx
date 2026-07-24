@@ -1,6 +1,6 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import Seo from "../components/Seo";
+import HeroVideo from "../components/HeroVideo";
 import ServiceCard from "../components/ServiceCard";
 import CtaBand from "../components/CtaBand";
 import { SERVICES } from "../data/services";
@@ -9,7 +9,6 @@ import {
   CalendarIcon,
   CheckIcon,
   ClockIcon,
-  HeartIcon,
   MapPinIcon,
   PhoneIcon,
   QuoteIcon,
@@ -42,14 +41,7 @@ const TRUST_POINTS = [
   },
 ];
 
-// Higgsfield-generated cinematic clinic video (10s, 720p). Self-host by
-// dropping the same file into public/hero.mp4 — the local source wins.
-const HERO_VIDEO_CDN =
-  "https://d8j0ntlcm91z4.cloudfront.net/user_3ERbZynT8QldfB80015vYWFljPv/hf_20260724_015540_d4124dfc-03f3-40c4-87f8-e68c83c9e5dc.mp4";
-
 export default function Home() {
-  const [videoReady, setVideoReady] = useState(false);
-
   return (
     <>
       <Seo
@@ -103,34 +95,9 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Hero visual — cinematic clinic video with branded fallback card. */}
+          {/* Hero visual — two-part cinematic clinic video with branded fallback card. */}
           <div className="relative">
-            <div className="relative aspect-[4/3] overflow-hidden rounded-3xl bg-gradient-to-br from-primary-700 via-primary-600 to-mint-600 shadow-lift">
-              <div className="absolute inset-0 flex flex-col items-center justify-center p-8 text-center text-white">
-                <HeartIcon className="mb-4 h-12 w-12 text-mint-200" />
-                <p className="font-display text-2xl sm:text-3xl">
-                  „Ovde se i najveći strah
-                  <br /> pretvara u osmeh."
-                </p>
-                <p className="mt-3 text-sm font-semibold uppercase tracking-widest text-primary-100">
-                  Pesonident · od 1991.
-                </p>
-              </div>
-              {/* Local /hero.mp4 wins when present; CDN copy is the fallback source. */}
-              <video
-                autoPlay
-                muted
-                loop
-                playsInline
-                preload="metadata"
-                className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ${videoReady ? "opacity-100" : "opacity-0"}`}
-                onCanPlay={() => setVideoReady(true)}
-                onError={() => setVideoReady(false)}
-              >
-                <source src="/hero.mp4" type="video/mp4" />
-                <source src={HERO_VIDEO_CDN} type="video/mp4" />
-              </video>
-            </div>
+            <HeroVideo />
             <div className="absolute -bottom-5 left-1/2 flex -translate-x-1/2 items-center gap-3 rounded-2xl bg-white px-5 py-3.5 shadow-lift">
               <div className="flex h-10 w-10 items-center justify-center rounded-full bg-mint-100 text-mint-700">
                 <CheckIcon className="h-5 w-5" />
