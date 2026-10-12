@@ -15,6 +15,8 @@ automatski se zamenjuje ikonicom, pa možete dodavati jednu po jednu.
 | `toceno-pivo.jpg`, `vino.jpg`, `kuvano-vino.jpg`, `somersby.jpg` | Pivo, vino, cider |
 | `aperol-spritz.jpg`, `mojito.jpg`, `blue-lagoon.jpg`, `sex-on-the-beach.jpg` | Kokteli |
 
+Trenutne fotografije su besplatne stock fotografije (CC0 / javni domen), spisak izvora je u `CREDITS.md`. Zamenite ih pravim fotografijama kafića kad ih budete imali, sa istim imenom fajla.
+
 Preporuka: kvadratne ili 4:3 fotografije, oko 1200 px, do 300 KB.
 Da bi se fotografija prikazala i uz neku drugu stavku, dodajte joj `img: "ime-fajla"` u `MENU` u `index.html`.
 Instagram link se uključuje u `SETTINGS.instagram` na vrhu skripte u `index.html`.
