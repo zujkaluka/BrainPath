@@ -4,11 +4,11 @@
 
 This Agreement is entered into on **13 November 2026** in [CITY], between:
 
-**1. [NAME OF PARTY A]**, [address], registration/ID no.: [ID], represented by [name and title] ("**Party A**"),
+**1. [NAME OF PARTY A]**, with its seat in Vršac, Republic of Serbia, [address], company reg. no. (MB) / tax ID (PIB): [NUMBER], represented by [name and title] ("**Party A**"),
 
 and
 
-**2. [NAME OF PARTY B]**, [address], registration/ID no.: [ID], represented by [name and title] ("**Party B**"),
+**2. [NAME OF PARTY B]**, with its seat in Timișoara, Romania, [address], trade register no. / CUI: [NUMBER], represented by [name and title] ("**Party B**"),
 
 (together the "**Parties**" and each a "**Party**").
 
@@ -66,14 +66,14 @@ The Recipient is liable for damages resulting from a breach of this Agreement. T
 
 ## 10. Personal Data
 
-If Confidential Information contains personal data, the Parties shall process it in accordance with Regulation (EU) 2016/679 (GDPR) and applicable law.
+If Confidential Information contains personal data, the Parties shall process it in accordance with the data protection law applicable to each Party (for Party B, Regulation (EU) 2016/679 (GDPR); for Party A, the Serbian Law on Personal Data Protection).
 
 ## 11. General Provisions
 
 1. This Agreement is the entire agreement of the Parties on its subject matter. Amendments are valid only in writing signed by both Parties.
 2. If any provision is invalid or unenforceable, the remaining provisions remain in effect.
 3. Failure to exercise a right is not a waiver of that right.
-4. This Agreement is governed by the laws of **[Republic of Croatia]**. The courts of **[Zagreb]** have jurisdiction, after an attempt at amicable resolution.
+4. This Agreement is governed by the law of the country of the Party against which a claim is brought (the defendant): the laws of the **Republic of Serbia** if the defendant is Party A, and the laws of **Romania** if the defendant is Party B. Any dispute shall be submitted to the exclusive jurisdiction of the competent court in **Vršac, Serbia**, if the defendant is Party A, and of the competent court in **Timișoara, Romania**, if the defendant is Party B, after an attempt at amicable resolution.
 5. This Agreement is made in two (2) identical copies, one for each Party (or may be signed electronically).
 
 ---
